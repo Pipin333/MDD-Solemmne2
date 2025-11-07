@@ -1,0 +1,42 @@
+=== LIMITACIONES Y MEJORAS POTENCIALES ===
+
+LIMITACIONES IDENTIFICADAS:
+
+1. Tamaño de Muestra:
+   - Se utilizaron 16001 observaciones de entrenamiento.
+   - Un dataset más grande podría mejorar la generalización.
+
+2. Feature Engineering:
+   - Se utilizaron las features originales sin transformaciones complejas.
+   - Podrían explorarse interacciones entre variables.
+
+3. Hiperparámetros:
+   - Se usó un grid de búsqueda limitado por tiempo computacional.
+   - Grid search exhaustivo o bayesian optimization podrían mejorar resultados.
+
+4. Validación:
+   - Se usó validación cruzada de 3 folds.
+   - Más folds o validación temporal podrían ser más robustos.
+
+MEJORAS PROPUESTAS:
+
+1. Preprocesamiento Avanzado:
+   - Imputación multivariada (MICE, KNN imputation).
+   - Detección y tratamiento de outliers más sofisticado.
+   - Feature selection mediante importancia de variables.
+
+2. Modelos Adicionales:
+   - XGBoost o LightGBM (gradient boosting moderno).
+   - Stacking/blending de modelos.
+   - Deep learning si el dataset crece significativamente.
+
+3. Optimización:
+   - Hyperparameter tuning con Bayesian Optimization.
+   - AutoML frameworks (H2O, TPOT).
+   - Calibración de probabilidades para clasificación.
+
+4. Implementación:
+   - Pipeline reproducible con tidymodels.
+   - Containerización (Docker) para deployment.
+   - API REST para predicciones en tiempo real.
+   - Dashboard interactivo (Shiny, Dash).

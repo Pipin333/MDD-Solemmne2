@@ -1,0 +1,29 @@
+=== REFERENCIAS BIBLIOGRÁFICAS ===
+
+Hastie, T., Tibshirani, R., & Friedman, J. (2009).
+  The Elements of Statistical Learning: Data Mining, Inference, and Prediction.
+  Springer Series in Statistics.
+
+James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013).
+  An Introduction to Statistical Learning with Applications in R.
+  Springer.
+
+Kuhn, M., & Johnson, K. (2013).
+  Applied Predictive Modeling.
+  Springer.
+
+Kuhn, M. (2008).
+  Building Predictive Models in R Using the caret Package.
+  Journal of Statistical Software, 28(5), 1-26.
+
+Breiman, L. (2001).
+  Random Forests.
+  Machine Learning, 45(1), 5-32.
+
+Cortes, C., & Vapnik, V. (1995).
+  Support-Vector Networks.
+  Machine Learning, 20(3), 273-297.
+
+Goodfellow, I., Bengio, Y., & Courville, A. (2016).
+  Deep Learning.
+  MIT Press.

@@ -1,0 +1,17 @@
+=== CONCLUSIONES DEL ANÁLISIS ===
+
+Se entrenaron 4 modelos de Machine Learning:
+ - knn, nnet, rf, svm
+
+MEJOR MODELO: nnet
+ - R² : 0.8819
+
+HALLAZGOS PRINCIPALES:
+- El modelo nnet explica 88.19 % de la varianza en los datos.
+- La paralelización permitió entrenar múltiples modelos eficientemente.
+- El preprocesamiento (escalado, imputación) fue crítico para el rendimiento.
+
+RECOMENDACIONES:
+- Implementar el modelo en producción con monitoreo continuo.
+- Reentrenar periódicamente con datos actualizados.
+- Considerar ensemble methods para mejorar robustez.
