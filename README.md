@@ -11,7 +11,7 @@ Estructura de archivos
 - `03_utils.R` : control de validación (caret) y `train_and_time()`.
 - `models/` : scripts por modelo que entrenan y (si `SAVE_MODELS=TRUE`) guardan RDS en `outputs/models/`.
 - `04_evaluate_and_plots.R` : genera métricas, tablas y gráficos a `outputs/`.
-- `Si.R` : orquestador que ejecuta las etapas en orden. Actúa como `run_all.R`.
+- `run.R` : orquestador que ejecuta las etapas en orden. Actúa como `run_all.R`.
 - `test_load.R` : script de prueba que simula la carga de RDS desde `outputs/models/` (no entrena ni evalúa).
 - `Congestion_Santiago_05_2025.csv` : dataset (colócalo en la raíz del proyecto).
 
@@ -57,7 +57,3 @@ Notas y buenas prácticas
 - Ajusta `ctrl` en `03_utils.R` si necesitas métricas específicas o validación temporal.
 - Guardar modelos (`SAVE_MODELS=TRUE`) facilita generar reportes sin re-entrenar.
 - Los archivos de salida se guardan en `outputs/` (CSV, PNG, TXT) y los modelos en `outputs/models/`.
-
-¿Algo más?
-----------
-Si quieres que guarde además metadatos de cada modelo (JSON con fecha, tiempo, parámetros), o que añada un `Makefile`/`ps1` para automatizar, lo implemento rápido.
