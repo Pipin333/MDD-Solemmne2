@@ -3,7 +3,7 @@
 if(!exists('train_df')) stop('Ejecute 02_load_prep.R primero')
 
 # ⭐ CONFIGURACIÓN BALANCEADA
-cv_folds <- 7  # 7 folds = buen balance entre velocidad y validación
+cv_folds <- 10  # 7 folds = buen balance entre velocidad y validación
 
 ctrl <- caret::trainControl(
   method = 'cv', 

@@ -4,15 +4,6 @@ if(!exists('data_path')) stop('Defina `data_path` en 01_setup.R antes de sourcea
 df <- readr::read_csv(data_path, show_col_types = FALSE)
 cat('Dimensiones del dataset:', nrow(df),'x', ncol(df), '\n')
 
-# ⭐ REDUCIR A 20,000 FILAS
-if(nrow(df) > 20000){
-  cat('🚨 Dataset grande (', nrow(df), ' filas)\n')
-  cat('   Reduciendo a 20,000 filas para balance velocidad/precisión...\n')
-  set.seed(123)
-  df <- df[sample(nrow(df), 20000), ]
-  cat('✓ Dataset reducido a:', nrow(df), 'filas\n')
-}
-
 if(!(target_var %in% names(df))){
   stop(paste('La variable target', target_var, 'no existe en el dataset.'))
 }
